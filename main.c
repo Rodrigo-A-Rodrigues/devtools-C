@@ -17,7 +17,11 @@ main(){
   int idade;
   float peso, altura;
 
-  nome = (char*)malloc(sizeof(char));
+  nome = (char*)malloc(sizeof(char)); 
+  /* 
+    Compiladores diferentes podem receber diferentes comandos. Se necessário, é preciso reservar espaço de memória para a variável CHAR*
+    EXEMPLO:  id = (char*)malloc(sizeof(char)*50);
+  */
 
   printf("NOME: ");
   gets(nome); // leitura de texto
@@ -38,6 +42,8 @@ main(){
 void consolidando(char* n, char s, int i, float p, float a){
   printf("%s,Sexo %c, possui %d anos, pesa %.2f quilos e mede %f metros.\n", n,s,i,p,a);
 }
+
+
 // %.2f => equivale a 2 das 6 casas decimais existentes no params original
 // \n => Quebra de linha ou caracter ENTER
 /*
@@ -48,9 +54,19 @@ void consolidando(char* n, char s, int i, float p, float a){
   void => ação vazia (ES5)
 */
 /*
-  printf => Texto entre aspas duplas & especificadores de formato.
-  %D => número inteiro (int)
-  %F => número real (float)
-  %C => caracter único (char)
-  %S => Texto armazenado na memória (char*)
+  printf => Texto entre aspas duplas & especificadores de formato. {
+    %D => número inteiro (int)
+    %F => número real (float)
+    %C => caracter único (char)
+    %S => Texto armazenado na memória (char*)
+  }
+*/
+
+/*
+  Para ler um número APÓS a leitura de um caracter, será necessário aplicar:
+
+  ```
+  scanf("\n");
+  id = getchar();
+  ```
 */
