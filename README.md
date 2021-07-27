@@ -1,6 +1,3 @@
-### devtools-C
-Comandos base em C/C++ 
-
 <h1 align="center">
     devtools-C - C/C++
 </h1>
