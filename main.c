@@ -5,7 +5,7 @@
 */
 
 // Lib específica de projetos
-#include <stdio.h> // para usar printf, scanf and getchar
+#include <stdio.h> // para usar printf  scanf and getchar
 #include <stdlib.h> // para usar malloc, free and Gets
 
 // Design Pattern recommend => Factory
@@ -53,6 +53,7 @@ void consolidando(char* n, char s, int i, float p, float a){
   float => numero real
   void => ação vazia (ES5)
 */
+
 /*
   printf => Texto entre aspas duplas & especificadores de formato. {
     %D => número inteiro (int)
